@@ -5,8 +5,9 @@ class SettingsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Einstellungen')),
-      body: const Center(child: Text('Platzhalter Einstellungen')),
+      appBar: AppBar(title: Text('Einstellungen')),
+      body: Center(child: Text('Platzhalter Einstellungen')),
     );
   }
 }
+
