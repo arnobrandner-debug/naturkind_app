@@ -17,7 +17,6 @@ jobs:
       - run: flutter analyze lib --no-fatal-infos --no-fatal-warnings
 
   build_android:
-    if: github.event_name == 'pull_request'
     needs: analyze
     runs-on: ubuntu-latest
     steps:
@@ -34,4 +33,7 @@ jobs:
           sudo ${ANDROID_HOME}/cmdline-tools/latest/bin/sdkmanager \
             "platforms;android-35" "build-tools;35.0.0" --install
       - run: flutter pub get
-      - run: flutter build apk --debug
+      - name: Build debug APK (Gradle)
+        run: |
+          cd android
+          ./gradlew :app:assembleDebug --no-daemon
