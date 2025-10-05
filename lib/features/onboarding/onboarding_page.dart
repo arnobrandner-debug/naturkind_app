@@ -4,10 +4,9 @@ class OnboardingPage extends StatelessWidget {
   const OnboardingPage({super.key});
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      appBar: AppBar(title: Text('Onboarding')),
-      body: Center(child: Text('Onboarding Platzhalter')),
+    return Scaffold(
+      appBar: AppBar(title: const Text('Onboarding')),
+      body: const Center(child: Text('Onboarding Platzhalter')),
     );
   }
 }
-
