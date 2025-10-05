@@ -17,3 +17,5 @@ macos/Pods/
 .DS_Store
 *.iml
 *.log
+
+android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
