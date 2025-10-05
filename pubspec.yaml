@@ -1,0 +1,51 @@
+name: naturkind_app
+description: Naturkind Community App (MVP)
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Navigation & State
+  go_router: ^16.2.4
+  flutter_riverpod: ^2.6.1
+
+  # Netzwerk & Offline
+  dio: ^5.9.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.5
+
+  # UI/UX
+  flutter_markdown: ^0.6.23     # (discontinued, reicht hier fürs MVP)
+  cached_network_image: ^3.4.1
+  url_launcher: ^6.3.2
+  share_plus: ^10.1.4
+  package_info_plus: ^8.3.1
+  permission_handler: ^11.4.0
+  # Consent & Settings
+  shared_preferences: any
+  flutter_secure_storage: any
+
+# Push & Deep Links (Firebase vorbereitet)
+  firebase_core: any
+  firebase_messaging: any
+
+# Fehler-Tracking (Consent-gesteuert)
+  sentry_flutter: any
+
+  # E-Paper / PDF
+  pdfx: ^2.9.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.2
+
+flutter:
+  uses-material-design: true
