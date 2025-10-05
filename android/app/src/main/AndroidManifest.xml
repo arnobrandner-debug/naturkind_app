@@ -8,7 +8,7 @@
         tools:targetApi="33" />
 
     <application
-        android:name="${applicationName}"
+        
         android:label="naturkind_app"
         android:icon="@mipmap/ic_launcher">
         <!-- Standard-Kanal für FCM-Benachrichtigungen -->
